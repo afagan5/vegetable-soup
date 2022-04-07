@@ -15,4 +15,5 @@
 -- | 2019 | Houston Astros                | 107       |
 -- | 2004 | St. Louis Cardinals           | 105       |
 
-
+SELECT year,  name, wins FROM teams WHERE year >= 1960 GROUP BY wins ORDER BY wins DESC;
+SELECT year, name, MAX(wins) FROM teams WHERE year > 2000 GROUP BY year ORDER BY MAX(wins) DESC;
